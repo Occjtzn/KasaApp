@@ -7,7 +7,7 @@ export const Home = () => {
     <>
       <Header
         imageHeader={HeaderImage}
-        title="Chez vous, partout et d'ailleurs"
+        title="Chez vous, partout et ailleurs"
       />
       <CardsContainer />
     </>

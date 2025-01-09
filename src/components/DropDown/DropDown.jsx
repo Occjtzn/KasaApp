@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ArrowSvg from '../../assets/Svg/arrow_back.svg';
+import { IoIosArrowUp } from 'react-icons/io';
 import './styles/drop-down.scss';
 
 export const Dropdown = ({ items, type = 'global' }) => {
@@ -27,7 +27,7 @@ export const Dropdown = ({ items, type = 'global' }) => {
             onClick={() => handleToggle(index)}
           >
             <span className="dropdown-title">{item.title}</span>
-            <img src={ArrowSvg} alt="arrow" className="dropdown-icon" />
+            <IoIosArrowUp className="dropdown-icon" />
           </div>
           <div
             className={`${type === 'global' ? 'dropdown-frame' : 'logement-dropdown-frame'}`}

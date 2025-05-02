@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# KasaApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bienvenue dans **KasaApp**, une application web responsive développée avec **React 18**. Ce projet simule un site de location immobilière à la manière d’une plateforme comme Airbnb, avec une expérience utilisateur fluide, des animations élégantes et une structure de code maintenable.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📅 Description
 
-### `npm start`
+KasaApp permet de consulter différentes fiches de logements à travers une interface claire et moderne. Chaque page affiche des informations détaillées, un carrousel d’images, une description, des équipements et la notation de l'hôte.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Ce projet est basé sur des données locales au format JSON, et il inclut une gestion complète du routing avec des pages dynamiques pour chaque logement et une page 404 personnalisée.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📚 Fonctionnalités
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Liste de logements à partir de données locales
+- Pages de détails pour chaque bien immobilier
+- Slideshow/carrousel d’images avec navigation
+- Menus déroulants pour la description et les équipements
+- Composants réutilisables
+- Page d’erreur 404 personnalisée
+- Routing complet via `react-router-dom`
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🔧 Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clonez le dépôt :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/Occjtzn/KasaApp
+```
 
-### `npm run eject`
+2. Accédez au dossier du projet :
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+cd KasaApp
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Installez les dépendances :
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+yarn install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Lancez le serveur de développement :
 
-## Learn More
+```bash
+yarn start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🔹 Scripts disponibles
 
-### Code Splitting
+- `yarn start` : Démarre le serveur en mode développement
+- `yarn build` : Crée un build optimisé pour la production
+- `yarn test` : Lance les tests (si implémentés)
+- `yarn eject` : Éjecte la configuration Create React App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 💚 Technologies utilisées
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- React 18
+- React Router v6
+- SCSS pour les styles
+- FontAwesome pour les icônes
+- EmailJS pour le formulaire de contact (optionnel)
+- Create React App (CRA) comme base du projet
+- ESLint + Prettier pour la qualité du code
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🔖 Architecture du projet
 
-### Advanced Configuration
+```
+KasaApp/
+├── public/
+├── src/
+│   ├── assets/              # Images et ressources
+│   ├── components/          # Composants réutilisables (Header, Footer, etc.)
+│   ├── datas/               # Données JSON locales
+│   ├── pages/               # Pages principales (Home, About, Logement, etc.)
+│   ├── styles/              # Feuilles de styles SCSS
+│   ├── App.jsx              # Composant principal de l'application
+│   └── index.js             # Point d'entrée React
+├── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 📇 Auteur
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Projet conçu et développé par [Occjtzn](https://github.com/Occjtzn), développeur front-end spécialisé dans la création d’interfaces web modernes, performantes et accessibles.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Merci pour votre intérêt pour KasaApp 🏡
